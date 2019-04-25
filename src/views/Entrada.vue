@@ -1,35 +1,32 @@
 <template>
-  <div class="entrada">
-    <span>Entrada</span>
-    <cliente/>
-    <div class="seccion">
-      <span>Sección</span>
-    </div>
+  <div>
+    <anuncio />
+    <cliente />
+    <boletos />
   </div>
 </template>
 
 <script>
 import Cliente from "@/components/Cliente.vue";
+import Anuncio from "@/components/Anuncio.vue";
+import Boletos from "@/components/Boletos.vue";
 
 export default {
-  components: { Cliente }
+  components: { Cliente, Anuncio, Boletos }
 };
 </script>
 
 <style>
-.entrada {
-  margin: 10px;
-  padding: 10px;
-  background-color: #553f75;
-  font-size: 2.6rem;
-}
-
 .seccion {
   font-size: 2.4rem;
   color: #202020;
-  background-color: #fae25c;
+  background-color: #e9e9e9;
   border-radius: 5px;
   margin: 10px;
   padding: 10px;
+}
+
+.atributo {
+  margin: 10px;
 }
 </style>
